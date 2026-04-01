@@ -7,28 +7,23 @@ const buttons = document.querySelectorAll(".btn-add");
 buttons.forEach(button => {
     button.addEventListener("click", addToCart);
 });
-function addToCart(e) {
-    const product = e.target.closest(".product");
+function updateQuantity(id, quantity) {
+    const product = cart.find(item => item.id === id);
 
-    const name = product.querySelector("h4").textContent;
-    const priceText = product.querySelector("#currentPrice").textContent;
-    const price = parseFloat(priceText.replace(/[^0-9.]/g, ""));
-    const img = product.querySelector("img").src;
-
-    const existing = cart.find(item => item.name === name);
-
-    if (existing) {
-        existing.quantity++;
-    } else {
-        cart.push({
-            name,
-            price,
-            img,
-            quantity: 1
-        });
+    if (product) {
+        product.quantity = parseInt(quantity);
     }
 
-    showAlert("Producto agregado al carrito", "success");
+    renderCart();
+}
+
+function removeProduct(id) {
+    const index = cart.findIndex(item => item.id === id);
+
+    if (index !== -1) {
+        cart.splice(index, 1);
+    }
+
     renderCart();
 }
 function showAlert(message, type) {
