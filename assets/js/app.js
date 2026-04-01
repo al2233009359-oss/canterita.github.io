@@ -1,3 +1,15 @@
+const ListProducts=document.quertySelector("listProducts") 
+documento.addEventListener("DOMContentLoaded", function() {
+ eventlistener() ;
+}) ;
+function eventListener() {
+    listProducts.addEventListener("click", getDataElements) ;
+} 
+función getDataElements(e) {
+    if (e.target.classList.contains("btn-add"){ 
+    consol.log(e.target);
+    } 
+} 
 const cart = [];
 const cartCount = document.getElementById("cartCount");
 const contentProducts = document.getElementById("contentProducts");
