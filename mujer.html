@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Canterita|Mujer</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content container">
+            <nav class="navigation">
+                <a href="/">
+                    <img src="assets/img/Isologo.png" alt="logo" class="logo">
+                </a>
+                
+                <div class="btn-cart">
+                    <button type="button"><i class="fa-solid fa-cart-shopping icon-cart"></i></button>  
+                    <span id="cartCount">0</span>
+
+                    <div class="cart">
+                        <div class="cart-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="contentProducts">
+                                    <tr>
+                                        <td><img src="assets/img/products/producto1.jpg" alt=""></td>
+                                        <td>
+                                            Lorem ipsum dolor sit.
+                                        </td>
+                                        <td>$15</td>
+                                        <td>
+                                            <input type="number" min="1">
+                                        </td>
+                                        <td>
+                                            <button type="button">X</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                    
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="5" class="total">
+                                            <h4 class="heading-total">Total: <span id="total"></span></h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5">
+                                            <button type="button" id="emptyCart">Empty Cart</button>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+                </div> 
+
+                
+
+            </nav>
+        </div>
+
+        <form class="form-header">
+            <input type="search" name="search" placeholder="Search...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass icon-glass"></i></button>
+        </form>
+    </header>
+
+    <section class="banner">
+    <div class="banner-grid container">
+        
+        <div class="banner-item">
+            <i class="fa-solid fa-mars icon-banner"></i>
+            <a href="hombre.html" class="banner-link">Hombre</a>
+        </div>
+
+        <div class="banner-item">
+            <i class="fa-solid fa-venus icon-banner"></i>
+            <a href="mujer.html" class="banner-link">Mujer</a>
+        </div>
+
+        <div class="banner-item">
+            <i class="fa-solid fa-tags icon-banner"></i>
+            <a href="index.html" class="banner-link">Ofertas</a>
+        </div>
+
+    </div>
+    </section>
+
+    <main>
+        <section class="products" id="listProducts">
+            <h2>Mujer</h2>
+            <div class="products-grid container">
+                <div class="product">
+                    <img src="assets/img/products/producto10.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Set Comfort Training Mujer</h4>
+                        <p class="product-text">LOutfit deportivo cómodo y cálido, ideal para entrenamientos ligeros o descanso.</p>
+                        
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span></span>
+                            <p id="currentPrice">$899.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="1">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto2.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Tenis Running AirFlex Mujer</h4>
+                        <p class="product-text">Diseño ergonómico con amortiguación ligera para máxima comodidad en cada paso.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>$2,299</span>
+                            <p id="currentPrice">$1,199</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="2">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto11.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Windbreaker UltraLight Mujer</h4>
+                        <p class="product-text">Chamarra ligera resistente al viento, perfecta para exteriores y clima variable.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span></span>
+                            <p id="currentPrice">$749.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="3">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto12.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Set Fitness Sculpt Mujer</h4>
+                        <p class="product-text">Diseño ajustado que brinda soporte y realza el movimiento durante el entrenamiento.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span></span>
+                            <p id="currentPrice">$799.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="4">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto13.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Pants Active Comfort Mujer</h4>
+                        <p class="product-text">Pants suaves y flexibles con ajuste cómodo para uso deportivo o casual.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span></span>
+                            <p id="currentPrice">$499.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="5">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto6.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Termo Hydrate Sport 750 ml</h4>
+                        <p class="product-text">Botella ligera y resistente, ideal para mantenerte hidratado durante el entrenamiento.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>$350.00</span>
+                            <p id="currentPrice">$199.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="6">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto8.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Tenis Urban Sport White</h4>
+                        <p class="product-text">Estilo minimalista con comodidad deportiva para uso casual o activo.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>$3500.00</span>
+                            <p id="currentPrice">$1,099.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="8">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto9.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Set Active Motion Gris/Negro</h4>
+                        <p class="product-text">Conjunto ligero y flexible diseñado para máxima libertad de movimiento.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>$800.00</span>
+                            <p id="currentPrice">$699.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="9">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;2024 Canterita. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="assets/plugins/fontawesome/js/all.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

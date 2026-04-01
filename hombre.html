@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Canterita|hombre</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content container">
+            <nav class="navigation">
+                <a href="/">
+                    <img src="assets/img/Isologo.png" alt="logo" class="logo">
+                </a>
+                
+                <div class="btn-cart">
+                    <button type="button"><i class="fa-solid fa-cart-shopping icon-cart"></i></button>  
+                    <span id="cartCount">0</span>
+
+                    <div class="cart">
+                        <div class="cart-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="contentProducts">
+                                    <tr>
+                                        <td><img src="assets/img/products/producto1.jpg" alt=""></td>
+                                        <td>
+                                            Lorem ipsum dolor sit.
+                                        </td>
+                                        <td>$15</td>
+                                        <td>
+                                            <input type="number" min="1">
+                                        </td>
+                                        <td>
+                                            <button type="button">X</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                    
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="5" class="total">
+                                            <h4 class="heading-total">Total: <span id="total"></span></h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5">
+                                            <button type="button" id="emptyCart">Empty Cart</button>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+                </div> 
+
+                
+
+            </nav>
+        </div>
+
+        <form class="form-header">
+            <input type="search" name="search" placeholder="Search...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass icon-glass"></i></button>
+        </form>
+    </header>
+
+    <section class="banner">
+    <div class="banner-grid container">
+        
+        <div class="banner-item">
+            <i class="fa-solid fa-mars icon-banner"></i>
+            <a href="hombre.html" class="banner-link">Hombre</a>
+        </div>
+
+        <div class="banner-item">
+            <i class="fa-solid fa-venus icon-banner"></i>
+            <a href="mujer.html" class="banner-link">Mujer</a>
+        </div>
+
+        <div class="banner-item">
+            <i class="fa-solid fa-tags icon-banner"></i>
+            <a href="index.html" class="banner-link">Ofertas</a>
+        </div>
+
+    </div>
+    </section>
+
+    <main>
+        <section class="products" id="listProducts">
+            <h2>Hombre</h2>
+            <div class="products-grid container">
+                 <div class="product">
+                    <img src="assets/img/products/producto1.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Playera Performance DryFit Rojo Intenso</h4>
+                        <p class="product-text">LPlayera ligera de secado rápido con tecnología transpirable. Ideal para entrenamiento y uso diario.</p>
+                        
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>$450.00</span>
+                            <p id="currentPrice">$349.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="1">Add Cart</button>
+                    </div>
+                 </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto4.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Playera Active Core Gris Claro</h4>
+                        <p class="product-text">Corte cómodo con tejido suave y transpirable para actividades deportivas o casuales.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>$405.00</span>
+                            <p id="currentPrice">$329.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="4">Add Cart</button>
+                    </div>
+                    </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto15.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Jacket Oversize StreetFit</h4>
+                        <p class="product-text">Corte amplio con estilo urbano, ideal para un look deportivo contemporáneo.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span></span>
+                            <p id="currentPrice">$1,099 MXN</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="7">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto5.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Gorra Sport Snapback Dual Red</h4>
+                        <p class="product-text">Gorra ajustable con diseño moderno y ventilación óptima para uso diario.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>$350.00</span>
+                            <p id="currentPrice">$249.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="5">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto7.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Set Training Fit Pro Negro</h4>
+                        <p class="product-text">Conjunto ajustado que mejora la movilidad y ofrece soporte durante el ejercicio.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span></span>
+                            <p id="currentPrice">$799.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="7">Add Cart</button>
+                    </div>
+                    </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto14.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Jacket Retro Sport Classic</h4>
+                        <p class="product-text">Inspirada en el estilo deportivo vintage con materiales modernos y cómodos.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span></span>
+                            <p id="currentPrice">$999</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="7">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto3.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Balón Training Grip Pro</h4>
+                        <p class="product-text">Balón resistente de caucho con excelente agarre, perfecto para entrenamiento en cualquier superficie.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>$35.00</span>
+                            <p id="currentPrice">$1,199</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="3">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="assets/img/products/producto8.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Tenis Urban Sport White</h4>
+                        <p class="product-text">Estilo minimalista con comodidad deportiva para uso casual o activo.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>$3500.00</span>
+                            <p id="currentPrice">$1,099.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="8">Add Cart</button>
+                    </div>
+                </div><!--.product-->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;2024 Canterita. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="assets/plugins/fontawesome/js/all.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
